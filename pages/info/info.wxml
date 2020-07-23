@@ -1,0 +1,25 @@
+<view class="info">
+	<view class="info_s">
+		<view class="num">番茄数</view>
+		<view class="time">总时长</view>
+	</view>
+	<view class="info_n">
+		<view class="n_one"><text>{{tomatoTotal}}</text></view>
+		<view class="n_two"><text>{{timeTotal}}</text></view>
+	</view>
+</view>
+<view class="charts">
+	<ec-canvas class="{{chartsHidden ? 'hide' : ''}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="btn">
+	<button bindtap="switchModal">清除数据</button>
+	<modal 
+		title="提示" 
+		confirm-text="确定" 
+		cancel-text="取消" 
+		hidden="{{modalHidden}}" 
+		bindconfirm="clearInfo" 
+		bindcancel="switchModal">
+	    是否清除记录？此操作不可恢复!
+	</modal>
+</view>

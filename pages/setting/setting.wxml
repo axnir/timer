@@ -5,11 +5,10 @@
 	    <slider 
 	    	bindchange="changeWorkTime" 
 	    	show-value="true" 
+				activeColor="#ff6347"
 	    	min="1"
 	    	max="60"
-	    	value="{{workTime}}"
-	    	left-icon="cancel" 
-	    	right-icon="success_no_circle"/>
+	    	value="{{workTime}}"/>
 	  </view>
 	</view>
 
@@ -19,30 +18,24 @@
 	    <slider 
 	    	bindchange="changeRestTime" 
 	    	show-value="true" 
+				activeColor="#ff6347"
 	    	min="5"
 	    	max="60"
-	    	value="{{restTime}}"
-	    	left-icon="cancel" 
-	    	right-icon="success_no_circle"/>
+	    	value="{{restTime}}"/>
 	  </view>
 	</view>
 
 	<view class="section panel">
 	  <view class="section_title">
-	  	<text>主页背景</text>
-	  </view>
-	  <view class="section_body">
-	  	<text bindtab="" class="section_tip">选择背景 > </text>
+		<text>是否播放任务完成提示音</text>
+	  	<switch class="section_check" type="switch" color="#ff6347" checked bindchange="switchNotice"/>
 	  </view>
 	</view>
 
 	<view class="section panel">
 	  <view class="section_title">
-	  	<switch class="section_check" type="checkbox" size="mini" checked bindchange="switch1Change"/>
-	  	<text>启用铃声</text>
-	  </view>
-	  <view class="section_body">
-	  	<text bindtab="" class="section_tip">选择铃声 > </text>
+		<text>是否保持屏幕常亮</text>
+	  	<switch class="section_check" type="switch" color="#ff6347" checked bindchange="switchScreenOn"/>
 	  </view>
 	</view>
 

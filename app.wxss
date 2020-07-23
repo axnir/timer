@@ -31,13 +31,7 @@ page {
 }
 
 .hide {
-  display: none!important;
-}
-
-.container,
-input,
-button {
-  font: 14px "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  display: none !important;
 }
 
 .container {

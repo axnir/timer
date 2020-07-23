@@ -1,0 +1,31 @@
+.info {
+  width: 100%;
+  height: 20%;
+  color: #ff6347;
+  padding-top: 20px;
+  text-align: center;
+}
+.info .info_n {
+  margin-top: 10px;
+}
+.info .info_n .n_one {
+  float: left;
+  width: 50%;
+}
+.info .info_s .num {
+  float: left;
+  width: 50%;
+}
+.charts {
+  width: 100%;
+  height: 60%;
+}
+.btn {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+}
+.btn button {
+  margin-top: 10px;
+  color: #ff6347;
+}

@@ -10,6 +10,8 @@
 }
 .section_check{
 	margin-right: 5px;
+	display: block;
+	text-align: right;
 }
 .section_tip{
 	display: block;

@@ -1,35 +1,37 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/info/info",
     "pages/setting/setting"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#3197ed",
-    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ff6347",
+    "navigationBarTitleText": "番茄时钟",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#dddddd",
-    "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "selectedColor": "#ff6347",
+    "backgroundColor": "#fff",
     "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
-      "text": "主页"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
-      "text": "记录"
-    }, {
-      "pagePath": "pages/setting/setting",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
-      "text": "设置"
-    }]
-  }
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_tomato.png",
+        "selectedIconPath": "images/icon_tomatoHL.png",
+        "text": "番茄"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "iconPath": "images/icon_info.png",
+        "selectedIconPath": "images/icon_infoHL.png",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "images/icon_setting.png",
+        "selectedIconPath": "images/icon_settingHL.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }
